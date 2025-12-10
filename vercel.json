@@ -1,6 +1,22 @@
 {
   "rewrites": [
     {
+      "source": "/auth/:match*",
+      "destination": "https://finet-api.vercel.app/auth/:match*"
+    },
+    {
+      "source": "/wallet/:match*",
+      "destination": "https://finet-api.vercel.app/wallet/:match*"
+    },
+    {
+      "source": "/expense/:match*",
+      "destination": "https://finet-api.vercel.app/expense/:match*"
+    },
+    {
+      "source": "/user/:match*",
+      "destination": "https://finet-api.vercel.app/user/:match*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/"
     }
